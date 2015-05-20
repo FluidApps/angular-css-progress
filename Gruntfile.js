@@ -87,7 +87,7 @@ module.exports = function(grunt) {
       temp: {
         src: [ 'tmp' ]
       }
-    }/*,
+    },
     bump: {
       options: {
         files: ['package.json', 'bower.json'],
@@ -98,11 +98,11 @@ module.exports = function(grunt) {
         push: true,
         pushTo: 'origin'
       }
-    }*/
+    }
   });
 
   // Load the plugins
-  //grunt.loadNpmTasks('grunt-bump');
+  grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');

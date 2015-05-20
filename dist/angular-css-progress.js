@@ -1,18 +1,18 @@
 angular.module('angular-css-progress', []).directive('faCssProgress', function() {
   var scope = {
-    min: '=',
+    min: '=?',
     current: '=',
-    max: '='
+    max: '=?'
   };
   
   var templateUrl = function(elem, attrs) {
-    var progressShapes = ['circle'];
+    var supportedShapes = ['circle'];
     
-    if (!attrs.type || progressShapes.indexOf(attrs.type) < 0) {
+    if (!attrs.type || supportedShapes.indexOf(attrs.type) < 0) {
       attrs.type = 'circle';
     }
     
-    return 'fa-css-progress-' + attrs.type + '.html';
+    return 'angular-css-progress-' + attrs.type + '.html';
   };
   
   var link = function(scope, element, attrs) {
@@ -23,7 +23,7 @@ angular.module('angular-css-progress', []).directive('faCssProgress', function()
     element = element[0];
     
     scope.min = parseInt(scope.min || 0, 10);
-    scope.current = parseInt(scope.current || 0, 10);
+    scope.current = parseInt(scope.current, 10);
     scope.max = parseInt(scope.max || 100, 10);
     
     var progress = Math.floor((scope.current / scope.max) * 100);
@@ -40,6 +40,7 @@ angular.module('angular-css-progress', []).directive('faCssProgress', function()
       var prefixes = ['Webkit', 'Moz', 'ms', 'O'];
       
       element.style[property] = value;
+      property = property.charAt(0).toUpperCase() + property.substring(1);
       
       for (var i = 0, length = prefixes.length; i < length; i++) {
         element.style[prefixes[i] + property] = value;

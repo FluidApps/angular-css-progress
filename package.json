@@ -1,6 +1,6 @@
 {
   "name": "angular-css-progress",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A directive for AngularJS for displaying progress indicators with CSS only",
   "main": "dist/angular-css-progress-tpls.js",
   "repository": {

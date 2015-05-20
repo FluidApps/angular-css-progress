@@ -1,5 +1,5 @@
 /*! 
- * angular-css-progress v0.1.1
+ * angular-css-progress v0.1.2
  * https://github.com/FluidApps/angular-css-progress
  * Copyright (c) 2015 FluidApps https://fluidapps.ca
  * License: MIT

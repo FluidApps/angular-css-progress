@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+tmp
+
+bower_components
+node_modules
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db

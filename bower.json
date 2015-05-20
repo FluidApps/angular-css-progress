@@ -1,0 +1,33 @@
+{
+  "name": "angular-css-progress",
+  "version": "0.1.0",
+  "homepage": "https://github.com/FluidApps/angular-css-progress",
+  "authors": [
+    "Pier-Luc Gendreau <info@fluidapps.ca>"
+  ],
+  "description": "A directive for AngularJS for displaying progress indicators with CSS only",
+  "main": [
+    "dist/angular-css-progress.min.css",
+    "dist/angular-css-progress-tpls.js"
+  ],
+  "keywords": [
+    "angular",
+    "progress",
+    "css",
+    "circle"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "Gruntfile.js",
+    "package.json",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0"
+  }
+}

@@ -2,15 +2,29 @@
 
 A directive for AngularJS for displaying progress indicators with CSS only.
 
+### Installation
+
+```
+bower i angular-css-progress --save
+```
+
 ### Usage
 
-1. `bower install angular-css-progress`
-2. Include it:
+#### Include it
 
 ```html
 <link rel="stylesheet" href="bower_components/angular-css-progress/dist/angular-css-progress.min.css">
 <script src="bower_components/angular-css-progress/dist/angular-css-progress-tpls.min.js"></script>
 ```
 
-3. Load it: `angular.module('myApp', ['angular-css-progress']);`
-4. Use it: `<div fa-css-progress min="myModel.min" current="myModel.current" max="myModel.max"></div>`
+#### Load it
+
+```javascript
+angular.module('myApp', ['angular-css-progress']);
+```
+
+#### Use it
+
+```html
+<div fa-css-progress min="myModel.min" current="myModel.current" max="myModel.max"></div>
+```

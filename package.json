@@ -1,6 +1,6 @@
 {
   "name": "angular-css-progress",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A directive for AngularJS for displaying progress indicators with CSS only",
   "main": "dist/angular-css-progress-tpls.js",
   "repository": {
@@ -18,11 +18,13 @@
     "email": "info@fluidapps.ca",
     "url": "https://fluidapps.ca"
   },
-  "contributors": [{
-    "name": "Pier-Luc Gendreau",
-    "email": "info@fluidapps.ca",
-    "url": "https://fluidapps.ca"
-  }],
+  "contributors": [
+    {
+      "name": "Pier-Luc Gendreau",
+      "email": "info@fluidapps.ca",
+      "url": "https://fluidapps.ca"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FluidApps/angular-css-progress/issues"

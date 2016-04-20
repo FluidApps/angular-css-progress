@@ -1,5 +1,6 @@
 angular.module('angular-css-progress', []).directive('faCssProgress', function() {
   var scope = {
+    label: '=?',
     min: '=?',
     current: '=',
     max: '=?'
@@ -49,7 +50,7 @@ angular.module('angular-css-progress', []).directive('faCssProgress', function()
     
     clearProgress(element);
     
-    element.querySelector(".text").innerHTML = progress + "%";
+    element.querySelector(".text").innerHTML = scope.label ? scope.label : progress + "%";
     
     var angle, elements, i, length;
     
